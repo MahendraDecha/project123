@@ -1,0 +1,118 @@
+<html>
+<head>
+ <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	
+    .panel-bodybg2
+{
+    background:#f2f2f2;
+}
+.rg{
+   
+    border-radius: 15px;
+   }
+
+	</style>
+</head>
+<body>
+ <a href="#credits" class="toggle btn btn-primary">Click on me to reveal the hidden treasure</a>
+<div id="credits" class=" hidden">
+    
+   
+      <div class="col-sm-4">
+      
+    <div class="panel mds ">
+     <div class="panel-body panel-bodybg2 rg">
+
+    <form role="form" class="panel-bodybg2">
+                               
+
+
+             <div class="row">
+            <div class="col-sm-6">
+
+              <label for="first_name">First Name*</label>
+            <input type="text" class="form-control" id="First_Name" placeholder="FirstName">
+               </div>
+               <div class="col-sm-6">  
+                    <label for="lastName">Last Name</label>
+                   <input type="text" class="form-control" id="Last_Name" placeholder="Last_Name">
+                      </div>
+                           </div>
+                                 
+                            <br>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                   <label for="Email">Email</label>
+                                     <input type="Email" class="form-control" id="email" placeholder="Email">
+                                          </div>
+                                             </div>
+     
+    
+     <br />
+            <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+              <label for="pwd">Password*</label>
+            <input type="Password" class="form-control" id="password" placeholder="password">
+               </div>
+             </div>
+               <div class="col-sm-6">  
+                <div class="form-group">
+                 <label for="conf_pwd">Confirm password*</label>
+                   <input type="password" class="form-control" id="Confirm_Password1" placeholder="Confirm Password">
+                      </div>
+                      </div>
+                           </div>
+       
+       </br>
+                <div class="row">
+                 <div class="col-sm-6">
+                  <label for="Monile_no">moble no*</label>
+                  <input type="number" class="form-control" id="mobilenumber" placeholder="Mobile_no">
+                   </div>
+                    <div class="col-sm-6">
+                      <label for="sex">Sex*</label><br>
+                        <input type="radio" name="gender" value="male"> Male 
+                          <input type="radio" name="gender" value="female"> Female 
+                            </div>
+                                  </div>
+    <br />
+           <div class="row">
+           <div class="col-sm-12">
+            <input type="checkbox"> I accept <a href="#">Terms and condition</a>
+            </div>
+               </div>
+     <br />
+           <div class="row">
+           <div class="col-sm-12">
+           	<button type="button" class="btn btn-primary">Register</button>
+           
+     </div>
+     </div>
+   </form>
+</div>
+     </div>
+                          <div class="row text-center"> Already A memeber?</div>
+                                   </div>
+                                         </div>
+                                               
+
+<script>
+$(function () {
+
+    $('.toggle').click(function (event) {
+        event.preventDefault();
+        var target = $(this).attr('href');
+        $(target).toggleClass('hidden show');
+    });
+
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<html>
+<title>Login</title>
+<head>
+	 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style> 
+@charset "utf-8";
+
+*{
+
+box-sizing:border-box;
+margin: 0;
+padding: 0;
+border: 0;
+}
+html, body
+{
+
+width: 100%;
+height: 100%;
+background-color: gray;
+font-family: 'open sans',sans-serif;
+font-weight: 200px;
+
+}
+.login{
+   position: relative;
+   top: 40%;
+   display:table;
+   margin: -80px  auto 0 auto ;
+   background: #fff;
+   border-radius:4px;
+
+}
+.legend
+{
+position: relative;
+width:400px;
+display: block;;
+background: #ff7052;
+padding: 20px;
+color: #fff;
+font-size: 25px;
+border-radius: 8px;
+}
+     .legend:after{
+         content: "";
+         background-color: red;
+         background-size: 150px 150px;
+         background-repeat:no-repeat;
+         background-position: 150px -16px;opacity: 0.06;
+         top:0;
+         bottom: 0;
+         right: 0;
+         position: absolute;
+     }
+     .inpit
+     {
+
+position: relative;
+width: 80%;
+margin: 15px;
+}
+.input span{
+position: absolute;
+display: block;
+color: #d4d4d4;
+left: 20px;
+font-size: 20px;
+}
+.input input{
+	margin-left: 5px;
+width: 97%;
+padding: 10px 10px 10px 40px;
+display: block;
+border: 1px solid #EDEDED;
+border-radius: 4px;
+transition:0.2s ease-out;
+color: #alalal;
+}
+.input input:focus{
+    padding: 10px 5px 10px 10px;
+    outline:0;
+    border-color: #ff7052;
+
+
+}
+.submit{
+  width: 45px;
+  height: 45px;
+  display: block;
+  margin:0 auto -15px auto;
+  background: #fff;
+  border-radius: 100% ;
+  border: 1px solid #ff7052;
+  color: #ff7052;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 0px 7px #fff;
+  transition : 0.2s ease-out;
+}
+.submit:hover,
+.submit:focus{
+  background: #FF7052;
+  color: #fff;
+  outline: 0;
+
+}
+.feedback
+{
+	position:absolute;
+	bottom: -70;
+	width: 100%;
+	text-align:center;
+	color: #fff;
+	background: #2ecc71;
+	padding: 10px 0 ;
+	font-size: 12px;
+	display: none;
+	opacity: 0px;
+ }
+.feedback:before
+{
+
+bottom:100px;
+left: 50px;
+content: "";
+height: 0px;
+width: 0px;
+position: absolute;
+pointer-evens:none;
+border-color: rgba(46,204,113,0);
+border-bottom-color: #2ecc71;
+border-width: 10px;
+margin-left: -10px
+}
+
+	</style>
+</head>
+<body>
+   <form class="login">
+   	<fieldset>
+   <legend class="legend">login</legend>
+   <div class="input">
+   <input type="email" placeholder="Email" required />
+   <span><i class="fa fa-envelop-o"></i></span>
+   </div> 
+   <br/>
+   	<div class="input">
+   <input type="password" placeholder="Password" required />
+   <span><i class="fa fa-lock"></i></span></div>
+</br>
+   <div>
+   <button type="submit" class="submit"><i class="fa fa-long-arroe-right"</button>
+  </div>
+   <div class="feedback">
+
+   	 login sucessfull <br/>
+   	 redirecting..
+   	</div>
+</fieldset>
+</body>
+</html>
